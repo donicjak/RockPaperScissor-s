@@ -35,7 +35,7 @@ body {
 
 }
 
-.buttons {
+.optionBtn {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -116,4 +116,16 @@ button:active {
 
 .restart {
     margin-top: 20px;
+}
+
+#playerScore,
+#computerScore,
+#roundResults
+{
+    font-size: 30px;
+    color: rgb(14, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

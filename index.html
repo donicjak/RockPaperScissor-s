@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="script.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,32 +15,34 @@
         <div class="choice">Make a choice!</div>
         <div class="rules">First to 5 wins the Game!</div>
     </div>
-    <div class="buttons">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissor's</button>
+    <div class="optionBtn">
+        <button id="0">Rock</button>
+        <button id="1">Paper</button>
+        <button id="2">Scissor's</button>
     </div>
     <div class="status">
         <div class="player">
             Score of a Player
-            <div class="player-button"></div>
+            <div class="player-button" id="playerScore"></div>
         </div>
         <div class="computer">
             Score of a Computer
-            <div class="computer-button"></div>
+            <div class="computer-button" id="computerScore"></div>
         </div>
     </div>
     <div class="results">
         <div>Results:</div>
-        <div class="results-border">
+        <div class="results-border" id="roundResults">
         </div>
     </div>
 
     <div class="restart">
-        <button class="play-again" onclick="game()">Play Again!</button>
+        <button class="play-again" id="reset">Play Again!</button>
     </div>
 
 
 
 </body>
+<script src="script.js"></script>
+
 </html>
